@@ -35,13 +35,13 @@ public class ComandoControladorCliente {
         return fabricaCliente.crear(cliente);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable("id") long id){
         manejadorEliminarCliente.eliminar(id);
     }
 
     @PutMapping
-    public Cliente actualizar( Cliente cliente){
+    public Cliente actualizar(@RequestBody Cliente cliente){
         return manejadorActualizarCliente.actualizar(cliente);
     }
 }
