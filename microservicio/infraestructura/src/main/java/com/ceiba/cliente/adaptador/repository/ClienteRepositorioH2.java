@@ -9,12 +9,12 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public class RepositorioH2  implements DaoCliente {
+public class ClienteRepositorioH2 implements DaoCliente {
 
     private ClienteRegistroRepositoryJPA clienteRegistroRepositoryJPA;
 
     @Autowired
-    public RepositorioH2(ClienteRegistroRepositoryJPA clienteRegistroRepositoryJPA) {
+    public ClienteRepositorioH2(ClienteRegistroRepositoryJPA clienteRegistroRepositoryJPA) {
         this.clienteRegistroRepositoryJPA = clienteRegistroRepositoryJPA;
     }
 
