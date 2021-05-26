@@ -78,7 +78,9 @@ dependencies {
 	implementation project.ext.springbootjavax
 	implementation project.ext.springbootjpa
 
-
+	testCompile project.ext.springboottest
+	testCompile project.ext.junit5
+	testCompile project.ext.mockito
 	implementation project(':infraestructura')
 }
 
